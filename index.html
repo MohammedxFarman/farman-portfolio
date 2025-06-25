@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mohamed Farman Raza | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="web.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -20,57 +20,49 @@
     <button id="darkToggle" aria-label="Toggle dark mode">🌙</button>
     <button id="menuToggle" aria-label="Menu">&#9776;</button>
   </header>
-
   <main>
     <section class="hero">
       <h1>I'm <span>Farman</span>. I create designs that add value to your product.</h1>
-      <img src="profile.jpg" alt="Mohamed Farman Raza">
+      <img src="profile.jpg" alt="Mohamed Farman Raza" />
       <div class="hero-labels">
         <div class="label">EDUNET FOUNDATION AI/ML Intern – 2 Months</div>
         <div class="label">Web Developer – 1 Month</div>
       </div>
     </section>
-
-    <section class="projects-section" id="projects">
+    <section id="projects" class="projects-section">
       <h2>My Projects</h2>
       <div class="project">
-        🧠 <strong>AI Resume Analyzer</strong><br>
+        🧠 <strong>AI Resume Analyzer</strong><br />
         A smart tool that compares resumes with job descriptions using AI.
+        <div class="buttons">
+          <a href="NEW_RESUME.pdf" download class="btn"
+             onclick="alert('If downloading doesn\'t work, please right-click and choose Save Link As.')">
+            📥 Download Resume
+          </a>
+          <a href="NEW_RESUME.pdf" target="_blank" class="btn">👁️ Preview Resume</a>
+        </div>
       </div>
       <div class="project">🕹️ TIC‑TAC‑TOE Game using JavaScript</div>
       <div class="project">🗃️ TO‑DO List in Python</div>
       <div class="project">🌐 Personal Portfolio Website</div>
       <div class="project">🧮 Calculator Interface using HTML, CSS & JS</div>
     </section>
-
-    <!-- RESUME DOWNLOAD AREA -->
-    <section class="projects-section">
-      <h2>My Resume</h2>
-      <div class="buttons">
-        <a href="NEW_RESUME.pdf" download class="btn" onclick="alert('If downloading doesn\'t work, please right-click and choose Save Link As.')">📥 Download Resume</a>
-        <a href="NEW_RESUME.pdf" target="_blank" class="btn">👁️ Preview Resume</a>
-      </div>
-    </section>
-
     <section class="cta-area">
       <h2>Want to work together?</h2>
       <a href="#contact">Get in Touch</a>
     </section>
-
-    <section class="contact-section" id="contact">
+    <section id="contact" class="contact-section">
       <h2>Contact Me</h2>
       <div class="contact-info">
-        📧 <a href="mailto:mohamedfarmanraza@gmail.com">mohamedfarmanraza@gmail.com</a><br>
-        📞 +91 7085931121<br>
+        📧 <a href="mailto:mohamedfarmanraza@gmail.com">mohamedfarmanraza@gmail.com</a><br />
+        📞 +91 7085931121<br />
         🔗 <a href="https://www.linkedin.com/in/mohamed-farman-raza-baaab5329" target="_blank">LinkedIn</a>
       </div>
     </section>
-
     <section class="quote" id="quote">
       <p id="randomQuote">"Believe in yourself and all that you are."</p>
     </section>
   </main>
-
-  <script src="script.js"></script>
+  <script src="web.js"></script>
 </body>
 </html>
